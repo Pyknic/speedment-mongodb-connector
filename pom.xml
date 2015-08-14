@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.speedment</groupId>
+    <artifactId>speedment-mongodb-connector</artifactId>
+    <version>2.0.0-EA2</version>
+    <packaging>jar</packaging>
+    
+    <name>Speedment MongoDB Connector</name>
+    <description>
+        An extension to Speedment that allows you to connect to and generate
+        sources from a MongoDB document structure.
+    </description>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url> http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    
+    <developers>
+        <developer>
+            <id>permin</id>
+            <name>Per Ake Minborg</name>
+            <email>minborg@speedment.com</email>
+        </developer>
+        <developer>
+            <id>emifor</id>
+            <name>Emil Forslund</name>
+            <email>emil@speedment.com</email>
+        </developer>
+    </developers>
+
+    <organization>
+        <name>Speedment, Inc.</name>
+        <url>http://www.speedment.com/</url>
+    </organization>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.speedment</groupId>
+            <artifactId>speedment</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.0.3</version>
+	</dependency>
+    </dependencies>
+</project>
